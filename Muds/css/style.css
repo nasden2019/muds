@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  background: #fff;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.btn-nav {
+  background: #3c9cbc;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-brand img {
+  width: 110px;
+}
+/*fin del nav*/
+
+
+/*seccion uno/info*/
+#info {
+  position: relative;
+  padding-top: 80px;
+  height: 390px;
+  background: #3c9cbc;
+}
+
+.titulo-inicio {
+  font-weight: 900;
+}
+
+.titulo {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+}
+
+.small {
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+}
+
+.mesa {
+  width: 20rem;
+}
+/*fin seccion uno-info*/
+
+
+
+/* Como funciona */
+#explore-head-section, .seccion-dos, .porcentajes {
+  background: #F0F0F0;
+}
+
+.titulo-cfunciona {
+  color: #3c9cbc;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.titulo-tarjeta-azul {
+  color: #13303a;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.celu {
+  width: 12rem;
+}
+
+ .card-dos {
+  /*max-width: 85%;
+  max-height: 55%; */
+  background: lightgrey;
+  border: none;
+} 
+
+/* iconos */
+.items {
+  width: 3.5rem;
+}
+.items1 {
+  width: 4.3rem;
+}
+
+/*reconocimiento entre pares*/
+.titulo-reconoc {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.reconocimiento-pares {
+  background: #13303a;
+}
+
+.subtitulo-card {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #13303a;
+}
+
+.mujer {
+  width: 15rem;
+}
+
+/* Otras funcionalidades */
+.titulo-ofunc {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#otras-func {
+  background: #3c9cbc;
+  text-transform: uppercase;
+}
+
+.parrafo-ofunc {
+  
+  font-size: 0.8rem;
+}
+
+.img-func {
+  width: 5.5rem;
+}
+
+/* seccion 5 */
+#seccion-cinco {
+  background: #13303a;
+}
+
+/*footer*/
+.foot {
+  background: #3c9cbc;
+}
+
+.font-footer {
+  font-size: 1rem;
+}
+
+/*whatsapp icon*/
+.whats-icon {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  width: 3.7rem;
+}
+
+@media (max-width: 522px) {
+  .titulo-inicio {
+     margin-top: 4.5rem;
+  }
+
+  .titulo-cfunciona {
+    margin-top: 1rem;
+  }
+.titulo-reconoc {
+  margin-top: 3rem;
+}
+
+.titulo-cfunciona {
+  font-size: 1.4rem;
+}
+
+  .titulo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .mesa,
+  .img-celu,
+  .mujer {
+    display: none;
+    /* position: relative;
+    margin-top:50px;
+    height: auto;
+    background: #3c9cbc; */
+  }
+
+   .whats-icon {
+     width: 2.9rem;
+     margin-bottom: 0.7rem;
+   }
+
+   .titulo-tarjeta-azul {
+     font-size: 1.3rem;
+   }
+   h1 {
+     font-size: 1.5rem;
+   }
+   .titulo {
+     font-size: 1.3rem;
+     margin-bottom: 40px;
+   }
+
+   .items {
+     margin-bottom: 30px;
+   }
+   .subtitulo-card {
+     margin-bottom: 30px;
+   }
+   
+}
+/*para scrolling sin q tape el titulo de la seccion. como el nav es fix, 
+le quitamos el mismo margin con, en este caso, -106px */
+/*span.anchor {
+  margin-top: -106x; /* height of nav, in this case -106pxpx
+  display: block;
+  height: 106px;  height of nav, in this case 106px 
+  visibility: hidden;
+  position: relative;
+}*/
+
+/* SASS 
+$color1: #ff0000;
+
+section {
+
+    padding: 120px 0;
+    color: $color1;
+
+    &#info {
+        padding: 150px 0;
+    }
+
+}
+*/
+

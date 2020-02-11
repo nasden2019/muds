@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,500,500i,600,600i,700,800&display=swap" rel="stylesheet">
+	<title>Muds</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+	<!-- NAVBAR-->
+	<nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/Muds Home-02.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span id="boton_navbar" class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item">
+						<a class="nav-link btn-scroll" data-elemento="#explore-head-section1" data-scroll="70"
+							data-tiempo="200" href="#explore-head-section1">Cómo funciona? <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn-scroll" data-elemento="#otras-func1" data-scroll="70" data-tiempo="200"
+							href="#otras-func1">Otras funcionalidades</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn-scroll" data-elemento="#seccion-cinco" data-scroll="70" data-tiempo="200"
+							href="#seccion-cinco">Contacto</a>
+					</li>
+				</ul>
+				<button class="btn btn-nav px-3" data-toggle="modal" data-target="#contactModal" type="submit">Ir a la
+					App</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Modal -->
+	<div class="modal fade text-dark" id="contactModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Contactanos</h5>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="name">Nombre</label>
+							<input type="text" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="email">Email </label>
+							<input type="text" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="message">Mensaje</label>
+							<textarea class="form-control"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-nav btn-block">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Sección uno-->
+	<section id="info" class="mt-sm-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="ml-sm-5">
+						<h2 class="titulo titulo-inicio mb-sm-5">
+							Muds es una App que ayuda a mejorar la comunicación
+							entre las empresas y empleados
+						</h2>
+						<h6 class="subtitulo mb-sm-5">
+							Podrás recoger feedback sincero,
+							útil y en tiempo real
+						</h6>
+						<!-- <small class="small">
+							*Y cuesta menos tiempo y dinero
+							que tomarse un café
+							con un compañero
+						</small> -->
+					</div>
+				</div>
+				<!-- IMG -->
+				<div class="col-12 col-md-6">
+					<!-- para centrar al parent: justify-content-center. al child: align-items-center-->
+					<div class="p-sm-5 justify-content-center  ">
+						<img src="img/Muds Home-03.png" alt="" class="img-fluid mesa">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Como Funciona -->
+	<span class="anchor" id="explore-head-section1"></span>
+	<!--para scrolling sin q tape el titulo de la seccion-->
+	<section id="explore-head-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col text-center">
+					<div class="py-md-1 mt-sm-4">
+						<h1 class="titulo-cfunciona">
+							Cómo funciona?
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Sección dos-->
+	<section class="seccion seccion-dos">
+		<div class="home-inner container">
+			<div class="row">
+				<div class="col-lg-6 p-sm-2 ml-md-5">
+					<div class="pm-md-2 my-4 ml-md3">
+						<h2 class="titulo-tarjeta-azul">
+							Estados de ánimo
+						</h2>
+						<div class="card rounded card-dos">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="p-md-2 align-self-start">
+										<img src="img/Muds Home-15.png" class="items">
+									</div>
+									<div class="align-self-center" id="items">
+										Posibilidad de customizar
+										los estados
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- celu -->
+				<div class="col">
+					<div class="position-absolute img-celu px-5">
+						<img src="img/Muds Home-04.png" alt="celular" class="img-fluid celu ml-sm-5">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reconocimiento-pares">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="pm-md-2 my-sm-5 ml-md-5">
+							<h2 class="titulo titulo-reconoc">
+								Reconocimiento
+								entre pares
+							</h2>	
+							<img src="img/Muds Home-05.png" class="img-fluid mujer ml-sm-5">
+						</div>
+					</div>
+					<!-- segunda col-->
+					<div class="col-sm-6 mt-md-5 mb-5">
+						<div class="d-flex ml-3 mt-md-5 py-md-5">
+							<div class="p-md-3 mt-md-5 align-self-start">
+								<img src="img/Muds Home-14.png" class="items">
+							</div>
+							<div class="p-md-3 ml-3 align-self-end text-white" id="items">
+								Medallas otorgables
+								con cierto límite por período
+							</div>
+						</div>
+
+						<div class="d-flex ml-2">
+							<div class="p-md-3 align-self-start">
+								<img src="img/Muds Home-13.png" class="items1">
+							</div>
+							<div class="p-md-3 mb-md-5 align-self-end text-white" id="items">
+								Customizables, pero asociadas
+								a los valores de la compañia
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Section 4-->
+	<section class="seccion seccion-dos mb-sm-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="py-5 mt-md-5 ml-md-5">
+
+						<h2 class="titulo-tarjeta-azul mb-3">
+							Buzón de sugerencias
+						</h2>
+
+						<div class="card card-dos">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="align-self-center mr-2">
+										<img src="img/Muds Home-12.png" class="items">
+									</div>
+									<div class="align-self-center" id="items">
+										Categorizado para generar reportes
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mt-md-5 ml-md-5">
+						<h2 class="titulo-tarjeta-azul mb-4">
+							Línea transparente
+						</h2>
+						<div class="card card-dos">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="p-md-2 mr-3 align-self-start">
+										<img src="img/Muds Home-11.png" class="items">
+									</div>
+									<div class="align-self-center" id="items">
+										Asociado a un código
+										de ética y conducta
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="card card-dos my-3">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="p-md-2 align-self-start">
+										<img src="img/Muds Home-07.png" class="items">
+									</div>
+									<div class="align-self-center" id="items">
+										Permite que sea anónimo o no
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--OTRAS FUNCIONALIDADES/servicios-->
+	<span class="anchor" id="otras-func1"></span>
+	<!--para scrolling sin q tape el titulo de la seccion-->
+	<section id="otras-func">
+		<div class="container">
+			<div class="text-center p-3">
+				<h2 class="mt-sm-4 text-white titulo-ofunc">
+					Otras Funcionalidades
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4 my-1">
+					<div class="card text-center mb-md-5 mb-3">
+						<div class="card-body height-cards" style="height: 250px;">
+							<img src="img/Muds Home-08.png" class="items">
+							<h5 class="subtitulo-card mt-md-3">
+								Hitos: almacenar eventos importantes
+							</h5>
+							<p class="parrafo-ofunc">Ver el hito y su impacto
+								en la gestión y estado de ánimo</p>
+						</div>
+					</div>
+				</div>
+				<!--my-4 o mb-resp a los col para responsivness-->
+				<div class="col-md-4 my-1">
+					<div class="card text-center mb-md-5 mb-3">
+						<div class="card-body hei" style="height: 250px;">
+							<img src="img/Muds Home-09.png" class="items">
+							<h5 class="subtitulo-card mt-md-3">
+								Reportes de gestión (de forma mensual)
+							</h5>
+							<p class="parrafo-ofunc">
+								Comparativa entre sectores y grupos destacados
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 my-1">
+					<div class="card text-center mb-md-5 mb-3">
+						<div class="card-body" style="height: 250px;">
+							<img src="img/Muds Home-10.png" class="items">
+							<h5 class="subtitulo-card mt-md-3">
+								Tablero de anuncios
+							</h5>
+							<p class="parrafo-ofunc">Generales o por reconocimiento + push</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion porcentajes my-sm-5">
+		<div class="container-fluid" style="margin-top: 10px; margin-bottom: 10px;">
+			<div class="row">
+
+				<div class="col-sm-3 mb-1">
+					<img src="img/Muds Home-20.png" class="img-fluid">
+				</div>
+				<div class="col-sm-3 mb-1">
+					<img src="img/Muds Home-18.png" class="img-fluid">
+				</div>
+				<div class="col-sm-3 mb-1">
+					<img src="img/Muds Home-21.png" class="img-fluid">
+				</div>
+				<div class="col-sm-3 mb-1">
+					<img src="img/Muds Home-19.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!--FORM-->
+	<section id="seccion-cinco">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-12 col-md-4">
+					<h2 class="titulo mt-4">
+						Registrate y empieza a usar Muds
+					</h2>
+				</div>
+				<div class="col-12 col-md-8 form-group">
+					<form action="https://formspree.io/mayqbadg" method="POST">
+						<div class="form-row">
+							<div class="from-group col-md-6 my-3">
+								<input type="text" class="form-control" style="border-radius: 10px;" placeholder="Nombre"
+									name="name" required>
+							</div>
+
+							<div class="from-group col-md-6 my-3">
+								<input type="text" class="form-control" style="border-radius: 10px;" placeholder="Apellido"
+									name="name" required>
+							</div>
+
+							<div class="form-group col-md-6 my-3">
+								<input type="email" class="form-control" style="border-radius: 10px;" placeholder="Email"
+									name="_replyto" required>
+							</div>
+
+							<div class="form-group col-md-6 my-3">
+								<input type="text" class="form-control" style="border-radius: 10px;" placeholder="Teléfono"
+									name="number" required>
+							</div>
+						</div>
+						<div class="text-center mt-3">
+							<button type="submit" class="btn btn-nav px-5" id="demo" value="send">Pedí tu Demo</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--FOOTER-->
+	<footer class="foot">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+					
+					<!--_blank para abrirlo en otra web-->
+					<a href="https://syloper.com/" target="_blank" rel="noopener noreferrer" class="navbar-brand text-white font-footer my-3">
+						Desarrollado por
+                        <img src="img/Muds Home-06.png">
+					</a>
+				</div>
+				<!-- <div class="col-12 col-md-4 d-flex justify-content-center align-items-center ">
+									<p class="copy-f">Copyright &copy; <span id="year"></span></p>
+								</div> -->
+			</div>
+		</div>
+	</footer>
+
+	<!-- d-flex justify-content-end para tirar icono hacia la derecha-->
+
+	<a id="contacto" href="https://api.whatsapp.com/send?phone=5493417198739&text=&source=&data=">
+		<img src="img/whatsapp.png" class="whats-icon">
+		<!-- <i class="fab fa-whatsapp fa-5x"></i> -->
+	</a>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script>
+		$('#year').text(new Date().getFullYear());
+	</script> -->
+	<script src="js/muds.js"></script>
+
+</body>
+
+</html>
+
